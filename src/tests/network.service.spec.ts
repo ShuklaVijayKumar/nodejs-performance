@@ -23,7 +23,6 @@ TestSuite.describe("it should send network request", () => {
     it("should return valid data", async () => {
 
         const result = await networkService.Get("url");
-        console.log(result.data);
         return expect(result.data).equals(TestSuite.testData);
     });
 });
