@@ -1,0 +1,33 @@
+{
+  "name": "wordcounter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules\\.bin\\tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "npm run build && node build/index.js",
+    "test": "node_modules\\.bin\\tsc && node_modules\\.bin\\mocha build/tests/*.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/mocha": "^5.2.5",
+    "axios": "^0.18.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0",
+    "sinon": "^6.1.4",
+    "ts-node": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/mockery": "^1.4.29",
+    "@types/node": "^10.5.4",
+    "@types/sinon": "^5.0.1",
+    "mockery": "^2.1.0",
+    "typescript": "^2.9.2"
+  }
+}
