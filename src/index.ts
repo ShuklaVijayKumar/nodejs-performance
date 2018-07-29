@@ -8,6 +8,6 @@ const start = async () => {
     const result = await processor.fetchData("http://www.loyalbooks.com/download/text/Railway-Children-by-E-Nesbit.txt");
 
     //writing result in data.json
-    fs.writeFileSync("./data.json", JSON.stringify(result));
+    fs.writeFileSync("./output/data.json", JSON.stringify(result));
 }
 start();
