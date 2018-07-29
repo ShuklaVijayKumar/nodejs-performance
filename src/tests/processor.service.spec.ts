@@ -20,8 +20,8 @@ TestSuite.describe("Wordprocessor tests", () => {
 
         const result = await processor.fetchData("url");  
         //prime false      
-        expect(result["This"].count).to.equal(4);
-        expect(result["This"].prime).to.be.false;
+        expect(result["this"].count).to.equal(4);
+        expect(result["this"].prime).to.be.false;
 
         //prime true
         expect(result["new"].count).to.equal(1);
